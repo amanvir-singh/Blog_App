@@ -1,0 +1,350 @@
+$myColor : #bbe4e9;
+
+.app{
+    display: flex;
+    justify-content: center;
+    .container{
+        width: 1024px;
+        .link{
+            text-decoration: none;
+            color: black;
+        }
+        .auth{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+            background-color: $myColor;
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 40px;
+            background-color: white;
+            gap: 20px;
+            width: 300px;
+            p{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: red;
+            }
+
+        input{
+            padding: 20px;
+            border: 1px solid black;
+
+        }
+        button{
+            padding: 20;
+            background-color: teal;
+            padding: 20px;
+            font-size: large;
+            border: none;
+            cursor: pointer;
+        }
+
+        }
+
+        h1{
+            color: teal;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        span{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            font-size: large;
+        }
+        }
+
+        .navbar{
+            background-color: teal;
+            display: flex;
+            justify-content: center;
+            .container{
+                display: flex;
+                padding: 5px 0px;
+                justify-content: space-between;
+                align-items: center;
+                .logo{
+                    img{
+                        width: 100px;
+                        height: 35px;
+                    }
+                }
+                .navigation{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    padding: 0px 20px;
+
+                    h5{
+                        font-size: 120 px;
+                        font-weight: 100;
+                    }
+                    .write{
+                        width: 70px;
+                        height: 70 px;
+                        border-radius: 50%;
+                        background-color: $myColor;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                    }
+                    span{
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+        .footer{
+            background-color: teal;
+            padding: 0px 20px;
+            img{
+                width: 100px;
+                height: 35px;
+            }
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .link{
+                display: flex;
+                justify-content: center;
+                background-color: #bbe4e9;
+                border-radius: 50%;
+                width: 100px;
+                height: 50 px;
+            }
+
+        }
+        .home{
+            .posts{
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                gap: 100px;
+                margin-bottom: 50px;
+            }
+            .post{
+                display: flex;
+                gap: 100px;
+                .p{
+                    margin-bottom: 30px;
+                }
+                .img{
+                    flex: 1;
+                    img{
+                        width: 100%;
+                        max-height: 200px;
+                        object-fit: cover;
+
+                    }
+                }
+                .content{
+                    flex: 2;
+                }
+
+                button{
+                    width: max-content;
+                    padding: 10px 20px;
+                    background-color: $myColor;
+                    border: none;
+                    border-radius: 5%;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .single{
+            display: flex;
+            gap: 50px;
+            .content{
+                flex: 5;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                img{
+                    width: 100%;
+                    max-height: 200px;
+                    object-fit: cover;
+                }
+                h1{
+                    font-size: 50px;
+                }
+                p{
+                    text-align: justify;
+                    line-height: 20px;
+                }
+                .writeComment{
+                    margin-top: 30px;
+                    display: flex;
+                    flex-direction: column;
+                    .editorContainer{
+                        height: 100px;
+                        overflow: scroll;
+                    }
+                }
+            }
+            .menu{
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                margin-bottom: 50px;
+                h1{
+                    font-size: 20px;
+                }
+                .post{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    border: 2px solid black;
+                    padding: 10px 10px;
+                    justify-content: center;
+                    align-items: center;
+                    
+                    img{
+                        width: 100%;
+                        height: 150px;
+                        object-fit: cover;
+                    }
+                    button{
+                        width: max-content;
+                        padding: 10px 10px;
+                        background-color: $myColor;
+                        border: none;
+                        border-radius: 5%;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .user{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                img{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    span{
+                        font-weight: bold;
+                    } 
+                }
+                .edit{
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 20px;
+                    .link{
+                        display: flex;
+                        background-color: $myColor;
+                        width: 70px;
+                        height: 25px;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 10%;
+                    }
+                    
+                }
+            }
+        }
+
+        .add{
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+
+            .content{
+                flex: 5;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                input{
+                    padding: 10px;
+                    border: 1px solid black;
+
+                }
+                .editorContainer{
+                    height: 300px;
+                    overflow: scroll;
+
+                    .editor{
+                        height: 100%;
+                    }
+                }
+                
+            }
+            .menu{
+                flex: 2;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                .post{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .item{
+                    border: 1px solid black;
+                    padding: 0px 20px;
+                    background-color: $myColor;
+                    display: flex;
+                    gap: 5px;
+                    align-items: center;
+                    justify-content: left;
+                    
+                }
+            }
+        }
+        .showComments{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            .comment{
+                border: 1px solid black;
+                padding: 0px 0px;
+                gap: 20px;
+                .posted{
+                    background-color: $myColor;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .allcontent{
+                    display: flex;
+                    justify-items: end;
+                    align-items: center;
+                    margin-right: 20px;
+                    .content{
+                        margin-left: 10px;
+                    }
+                    .delete{
+                        background-color: $myColor;
+                        width: 60px;
+                        text-align: center;
+                    
+                    }
+                }
+                
+            }
+        }
+    }
+
+}
+
+
+
+        
